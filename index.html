@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>GitPeek</title>
+</head>
+
+<body class="min-h-screen bg-gray-50 text-gray-800 flex flex-col items-center">
+
+<header class="w-full max-w-3xl mt-16 text-center">
+  <h1 class="text-3xl font-bold tracking-tight">GitHub Portfolio Viewer</h1>
+  <p class="text-gray-500 mt-2">Entrez un username pour voir les projets</p>
+</header>
+
+<form class="w-11/12 max-w-md mt-8 flex gap-2 m-4">
+  <input
+          type="text"
+          placeholder="ex: oslk-fs"
+          class="flex-1 px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black transition"
+  >
+  <button class="px-5 py-3 rounded-xl bg-black text-white hover:bg-gray-800 active:shadow-2xs cursor-pointer transition">
+    Voir
+  </button>
+</form>
+
+<section class="w-full max-w-3xl mt-10 mb-10 px-4">
+  <div id="loading" class="text-center text-gray-500 hidden">
+    Chargement...
+  </div>
+
+  <div id="error-message" class="text-center text-red-500 mb-4"></div>
+
+  <ul id="projects-list" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 auto-rows-fr"></ul>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
