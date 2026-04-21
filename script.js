@@ -81,7 +81,7 @@ async function fetchGitHubProjects(username) {
             language.className = `px-2 py-1 rounded-full text-xs font-medium ${colors[project.language] || colors.default}`;
 
             const stars = document.createElement("span");
-            stars.textContent = `⭐ ${project.stargazers_count}`;
+            stars.textContent = `☆ ${project.stargazers_count}`;
             stars.className = "font-medium";
 
 
@@ -123,10 +123,10 @@ async function fetchGitHubProjects(username) {
  */
 async function genererPortfolio() {
     const inputValue = input.value.trim();
-    if (inputValue !== "") {
-        await fetchGitHubProjects(inputValue);
-    } else {
+    if (inputValue === "") {
         errorElement.textContent = "Veuillez entrer un nom d'utilisateur.";
+    } else {
+        await fetchGitHubProjects(inputValue);
     }
 }
 
