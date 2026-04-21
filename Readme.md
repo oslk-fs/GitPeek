@@ -28,10 +28,12 @@ Le projet se concentre sur trois piliers du développement JavaScript :
 
 1.  **La Gestion des Erreurs** : Utilisation de `throw new Error()` pour interrompre le flux en cas de problème et redirection vers le bloc `catch`.
 2.  **L'Asynchronisme** : Utilisation de `await` pour attendre la réponse du serveur et la conversion du flux JSON.
-3.  **L'Optimisation** : Utilisation des méthodes `sort()` et `filter()` pour traiter les données reçues avant l'affichage.
+3.  **L'Optimisation** : Utilisation des méthodes `sort()` pour traiter les données reçues avant l'affichage.
 
 ## - Installation
 
 1. Clonez ce dépôt :
    ```bash
-   git clone [https://github.com/votre-utilisateur/github-portfolio.git](https://github.com/votre-utilisateur/github-portfolio.git)
+   git clone [https://github.com/oslk-fs/GitPeek.git]
+## - Lien
+   [https://oslk-fs.github.io/GitPeek/]
